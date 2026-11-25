@@ -60,6 +60,32 @@ a:focus-visible, [tabindex="0"]:focus-visible { outline: 3px solid var(--mint); 
 .brochure-quotation { margin: 0 0 .6rem; padding: .25rem 0 .25rem 1.25rem; border-left: 3px solid var(--rule); font-style: normal; }
 .brochure-quotation > :last-child { margin-bottom: 0; }
 .reference, .footer-inner { font-size: .94rem; color: var(--muted); }
+.artefact-card {
+  margin: 0 0 1rem;
+  padding: 1.25rem;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--mint);
+}
+.artefact-card dl {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: .5rem 1rem;
+  margin: 0;
+}
+.artefact-card dt { font-weight: 600; }
+.artefact-card dd { margin: 0; overflow-wrap: anywhere; }
+.artefact-card .artefact-file {
+  border-top: 1px solid var(--rule);
+  margin: 1rem 0 0;
+  padding-top: .85rem;
+  overflow-wrap: anywhere;
+}
+.artefact-card .artefact-file ~ p { margin: .75rem 0 0; }
+@media (max-width: 26rem) {
+  .artefact-card dl { grid-template-columns: minmax(0, 1fr); gap: .15rem; }
+  .artefact-card dd + dt { margin-top: .55rem; }
+}
 .entry { background: var(--panel); border-left: 3px solid #a79ac3; padding: 1rem; }
 .scroll-table { overflow-x: auto; }
 .scroll-table table { min-width: 28rem; margin: 0; }
