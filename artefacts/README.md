@@ -2,7 +2,11 @@
 
 To have the portfolio updated for you, attach the file in the portfolio chat. Give the module name, unit title, artefact type and artefact title. Include a brief description and any feedback you want to publish.
 
-## Adding an attachment through GitHub
+## Launch into Computing
+
+Keep the coursework file in the restricted Google Drive artefacts folder outside the GitHub repository. On the module page, use the file's Google Drive sharing link with the text **Download (Permission Required)**. Set general access to **Restricted** and grant Viewer access to approved readers.
+
+## Adding a public attachment through GitHub
 
 1. Open the [artefacts folder on GitHub](https://github.com/ce26229/eportfolio/tree/main/artefacts) while signed in with write access.
 2. Choose **Add file** and **Upload files**. Select the file and commit it to `main`. Use a distinct filename for each artefact, for example `launch-unit-03-sorting-report.pdf`.
