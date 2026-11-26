@@ -68,12 +68,13 @@ a:focus-visible, [tabindex="0"]:focus-visible { outline: 3px solid var(--mint); 
   border: 1px solid var(--rule);
   border-left: 3px solid var(--mint);
 }
-.artefact-card dl {
+.artefact-card dl,
+.artefact-card .artefact-file {
   display: grid;
   grid-template-columns: max-content minmax(0, 1fr);
   gap: .5rem 1rem;
-  margin: 0;
 }
+.artefact-card dl { margin: 0; }
 .artefact-card dt { font-weight: 600; margin: 0; }
 .artefact-card dd { margin: 0; overflow-wrap: anywhere; }
 .artefact-card .artefact-file {
@@ -83,8 +84,10 @@ a:focus-visible, [tabindex="0"]:focus-visible { outline: 3px solid var(--mint); 
   overflow-wrap: anywhere;
 }
 .artefact-card .artefact-file ~ p { margin: .75rem 0 0; }
+.artefact-card .artefact-file a { justify-self: start; }
 @media (max-width: 26rem) {
-  .artefact-card dl { grid-template-columns: minmax(0, 1fr); gap: .15rem; }
+  .artefact-card dl,
+  .artefact-card .artefact-file { grid-template-columns: minmax(0, 1fr); gap: .15rem; }
   .artefact-card dd + dt { margin-top: .55rem; }
 }
 .entry { background: var(--panel); border-left: 3px solid #a79ac3; padding: 1rem; }
