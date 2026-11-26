@@ -26,6 +26,7 @@ a:focus-visible, [tabindex="0"]:focus-visible { outline: 3px solid var(--mint); 
 .folio-label span, #banner .content p span { margin: 0 .5rem; }
 .button { font-size: .86rem; }
 .tiles article { min-height: 15rem; height: 28vh; padding: 0; }
+.tiles article.about-tile, .tiles article.modules-tile { width: 50%; }
 .tiles article.about-tile { background-image: url("../../images/pic01.webp"); }
 .tiles article.modules-tile { background-image: url("../../images/pic02.webp"); }
 .tiles article.about-tile:before { background-color: #346b76; }
