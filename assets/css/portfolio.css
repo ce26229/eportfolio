@@ -38,6 +38,7 @@ a:focus-visible, [tabindex="0"]:focus-visible { outline: 3px solid var(--mint); 
 .tile-link header p { font-size: .85rem; letter-spacing: .12em; }
 .reading { padding: clamp(3rem,7vw,6rem) 0; }
 .reading header.major { margin-bottom: 2rem; }
+.reading > header.major, .reading > header.major h1 { max-width: 100%; }
 .reading header.major h1:after { width: 4.6rem; height: 2px; background: var(--mint); }
 .reading > p { max-width: 46rem; }
 .lead { font-size: 1.2rem; color: var(--muted); }
