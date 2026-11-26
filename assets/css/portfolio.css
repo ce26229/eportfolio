@@ -86,6 +86,7 @@ a:focus-visible, [tabindex="0"]:focus-visible { outline: 3px solid var(--mint); 
 .artefact-card .artefact-file ~ p { margin: .75rem 0 0; }
 .artefact-card .artefact-file a { justify-self: start; }
 @media (max-width: 26rem) {
+  html, body { min-width: 0; }
   .artefact-card dl,
   .artefact-card .artefact-file { grid-template-columns: minmax(0, 1fr); gap: .15rem; }
   .artefact-card dd + dt { margin-top: .55rem; }
@@ -97,7 +98,7 @@ a:focus-visible, [tabindex="0"]:focus-visible { outline: 3px solid var(--mint); 
 #footer { border-top: 1px solid var(--rule); }
 .footer-inner { padding: 1.5rem 0; display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1rem; }
 @media(max-width: 48rem) {
-  .module-layout { grid-template-columns: 1fr; gap: 1rem; }
+  .module-layout { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
   .on-page { position: static; }
   .on-page ul { display: flex; flex-wrap: wrap; gap: .1rem 1rem; }
 }
